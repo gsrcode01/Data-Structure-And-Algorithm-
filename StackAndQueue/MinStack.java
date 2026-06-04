@@ -2,7 +2,7 @@ package StackAndQueue;
 import java.util.*;
 
 public class MinStack {
-    
+
         Stack<Integer> stack;
         Stack<Integer> minStack;
 
