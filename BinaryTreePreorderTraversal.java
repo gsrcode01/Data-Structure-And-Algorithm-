@@ -40,4 +40,40 @@ public class BinaryTreePreorderTraversal {
         // Traverse right subtree
         preorder(root.right, ans);
     }
+    /* Iterative Approach
+
+    public List<Integer> preorderTraversal(TreeNode root) {
+
+        List<Integer> ans = new ArrayList<>();
+
+        // Empty tree
+        if (root == null) {
+            return ans;
+        }
+
+        Stack<TreeNode> stack = new Stack<>();
+
+        // Push root first
+        stack.push(root);
+
+        while (!stack.isEmpty()) {
+
+            // Visit current node
+            TreeNode curr = stack.pop();
+            ans.add(curr.val);
+
+            // Push right child first
+            if (curr.right != null) {
+                stack.push(curr.right);
+            }
+
+            // Push left child second
+            if (curr.left != null) {
+                stack.push(curr.left);
+            }
+        }
+
+        return ans;
+    }
+     */
 }
