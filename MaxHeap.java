@@ -11,7 +11,7 @@ public class MaxHeap {
         }
     }
 
-    static void heapifyDown(int[] heap, int i, int n) {
+     static void heapifyDown(int[] heap, int i, int n) {
 
         int largest = i;
 
